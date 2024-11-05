@@ -1,0 +1,112 @@
+
+html, body {
+    font-size: 110%;
+    margin: 0;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font-family: 'Work Sans', Verdana, Geneva, Arial, sans-serif;;
+
+}
+.about, .projects, .contact, .header-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.about img{
+    max-width: 150px;
+}
+
+.projects article{
+    float:left
+}
+
+.projects article:nth-of-type(2) { /* this to adjust my projects spacing individually */
+    margin-left: 150px;
+}
+.projects article:nth-of-type(1) { /* this to adjust my projects spacing individually */
+    margin-left: 100px;
+}
+
+.project-description {
+    display: flex; 
+    align-items: center; 
+}
+
+.project-description img {
+    max-width: 300px;
+    margin-left: 50px; 
+    height: auto; 
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    
+    text-decoration: none;
+    font-family: 'Unica One';
+
+}
+
+h1, h2, h3{
+    font-family: 'Unica One';
+
+    text-align: center;
+    line-height: 100px;
+}
+
+p {
+    font-family: 'Unica One';
+
+    text-align: center;
+    line-height: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto; 
+}
+
+form label, form input, form textarea {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+
+textarea {
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.header-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+a {
+    color: #4E65FF;
+    transition: color 0.2s ease-in;
+}
+
+a:hover {
+    color: #1427a8;
+}
